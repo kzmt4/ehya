@@ -1,0 +1,39 @@
+@media (max-width: 1200px)
+
+    .container
+        max-width: 960px
+
+@media (max-width: 992px) 
+    .container
+        max-width: 768px  
+    .header
+        &-menu
+            &__item
+                margin-left: 32px
+@media (max-width: 768px)
+    .container
+        &__header
+            width: 650px
+    .menu
+        &-button 
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            width: 24px
+            height: 24px
+            background: none
+            position: absolute
+            top: 40px
+            right: 0
+            &__line
+                width: 22px
+                height: 2px 
+                background-color: #3A4C66 
+    .header
+        &-wrap
+            position: relative
+        &-menu
+            display: none
+        &-button    
+            display: none                              
