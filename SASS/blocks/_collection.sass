@@ -1,10 +1,15 @@
 .collection
+    padding-top: 120px
+    overflow: hidden
+    
     &-wrapper
         display: flex
+        justify-content: space-between
     &__wrap
         &-img
             display: flex
             justify-content: space-between
+            width: 670px
     &__img
         &-group 
            display: flex
@@ -14,13 +19,56 @@
         width: 320px
         height: 490px
         object-fit: cover
+        border-radius: 8px
     &__img2
         width: 320px
         height: 230px
         object-fit: cover
+        border-radius: 8px
     &__img3 
         width: 320px
         height: 230px
         object-fit: cover  
+        border-radius: 8px
     &__info
         width: 412px
+        display: flex
+        flex-direction: column
+        padding-top: 3px
+        
+    &__title
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        /* or 125% */
+
+        letter-spacing: 0.2px
+
+        color: #183B56
+    &__text
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 36px 
+        max-width: 362px 
+        margin-top: 30px 
+        color: #5A7184
+    &__link
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+        /* identical to box height */
+        text-decoration: none   
+        margin-top: 43px 
+        display: flex
+
+
+        color: #1565D8 
+        &-icon
+            margin-left: 18px   
+    

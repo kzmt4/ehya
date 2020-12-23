@@ -2,15 +2,225 @@
 
     .container
         max-width: 960px
+        &__header
+            width: 960px
+    .hero
+        
+        &-container
+            max-width: 992px 
+    .collection
+        padding-top: 80px
+        
+        &__container
+            max-width: 992px 
+        &__wrap
+            &-img
+                width: 55%
+        &__info
+            width: 40%
+        &__img1   
+            width: 265px
+        &__img2
+            width: 240px
+
+        &__img3   
+            width: 240px                   
+    .trands
+        
+        &-container
+
+            width: 992px 
+    .reviews
+        padding-top: 30px
+        &-slider
+            &__text
+                max-width: 992px  
+                height: 203px 
+    .history
+        padding-top: 67px
+        padding-bottom: 43px
+        &-container
+            width: 992px
+        &-slide
+            width: 100%
+            &__img  
+                width: 275px   
+    .subscribe
+       
+        &-container
+            width: 992px 
+    .footer
+        padding-top: 64px
+        &-container
+            max-width: 100%
+            width: 992px                                                   
 
 @media (max-width: 992px) 
-    .container
-        max-width: 768px  
+     
     .header
         &-menu
             &__item
                 margin-left: 32px
+    .container
+        max-width: 768px
+        &__header
+            width: 768px
+    .hero
+        padding-top: 10px
+        &-container
+            width: 768px
+            background-position: 5px -18px
+            padding-left: 28px
+            padding-top: 36px
+            padding-bottom: 37px
+        &-title
+            font-size: 48px
+            line-height: 60px
+            /* or 125% */
+            margin-top: 20px    
+            letter-spacing: 0.2px
+        &-wrapper
+            width: 444px 
+        &-description
+            font-size: 18px
+            margin-top: 23px
+            max-width: 400px
+            line-height: 32px
+        &-button
+            margin-top: 39px  
+        &-advantages
+            margin-top: 41px  
+            width: 500px  
+            &__item
+                margin-right: 22px  
+     
+    .collection
+        padding-top: 80px
+        max-height: 100%
+        &__container
+            max-width: 87%
+        &-wrapper
+            flex-direction: column
+        &__wrap
+            &-img  
+                width: 100% 
+                justify-content: space-around 
+        &__info
+            width: 100%
+        &__text
+            max-width: 100%
+        &__title
+            margin-top: 33px
+        &__link
+            margin-top: 22px 
+        &__img1
+            width: 320px
+            height: 490px
+            object-fit: cover
+            border-radius: 8px
+        &__img2
+            width: 320px
+            height: 230px
+            object-fit: cover
+            border-radius: 8px
+        &__img3 
+            width: 320px
+            height: 230px
+            object-fit: cover  
+            border-radius: 8px              
+    .trands
+        &-content
+            justify-content: space-evenly
+        &-container
+
+            width: 768px 
+    .reviews
+        padding-top: 30px
+        &-slider
+            &__text
+                max-width: 600px  
+                height: 203px 
+     
+    .history
+        padding-top: 67px
+        padding-bottom: 43px
+        &-container
+            width: 768px
+        &__wrapper
+            flex-direction: column
+            align-items: center 
+        &-text
+            width: 100%
+        &-description
+            max-width: 100%
+            margin: 0px auto 128px
+            text-align: center
+            width: 550px
+            
+        &-title
+            text-align: center
+        &__slider
+            &-container
+                width: 100%
+        &-slide
+            width: 100%
+            justify-content: space-evenly 
+        &-label
+            margin: 0 auto
+        &__button
+            top: 28.5%  
+            &--prev
+                left: 41%
+            &--next
+                left: 51.5%            
+    
+    .subscribe
+        padding-top: 68px
+        padding-bottom: 79px
+        &-container
+            width: 448px
+            flex-direction: column
+        &-title
+            width: 100%
+            text-align: center 
+        &__form
+            margin: 56px 0px 0 0               
+    
+    .footer
+        padding-top: 64px
+        &-container
+            max-width: 100%
+            width: 672px
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: space-between    
+        &-info
+            &__company
+                margin-left: 294px
+                margin-top: 20px
+            &__contacts
+                margin-top: 20px 
+            &__navigation
+                margin-left: -15px     
+        &-social
+            margin-left: 10px   
+
+
+
 @media (max-width: 768px)
+    .collection
+        
+        &__wrap
+            &-img  
+                width: 100% 
+                justify-content: space-between
+
+
+@media (max-width: 768px)
+    
+    body
+        padding-top: 105px
+
     .container
         &__header
             width: 650px
@@ -29,11 +239,715 @@
             &__line
                 width: 22px
                 height: 2px 
-                background-color: #3A4C66 
+                background-color: #3A4C66
+        &-mobile
+            display: none
+            &--visible
+                display: block
+
+            
     .header
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+        background-color: #ffffff
         &-wrap
             position: relative
         &-menu
+            &__item
+                margin-left: 0
+                margin-bottom: 20px 
+            &__mobile
+                &--hidden
+
+                    display: none 
+                &--visible
+                    flex-direction: column
+                    margin: 0
+                    margin-top: 20px
+                    text-align: center
+        &-button
+            &__mobile
+                &--hidden
+
+                    display: none 
+                    
+                
+
+
+        
+            
+             
+    .mobile
+        overflow-y: auto
+        
+        &--visible
+            display: flex
+            flex-direction: column
+            align-items: center
+            overflow-y: auto
+            position: fixed
+            top: 102px
+            left: 0
+            right: 0
+            bottom: 0
+            background-color: #fff
+        &--hidden
             display: none
-        &-button    
-            display: none                              
+        &__container
+            width: 59%
+            
+            display: flex
+            flex-direction: column
+            align-items: center  
+
+            // ================================= .hero ============================== 
+    .hero
+        &-container
+            width: 728px
+                //   ===================  .collection===============================================
+    .collection
+        padding-top: 80px
+        &__container
+            max-width: 670px                     
+
+    // ========================================= .trands ==========================================
+    .trands
+        padding-top: 75px
+        &-content
+            justify-content: space-between
+            &__item
+                margin-bottom: 47px
+
+            &__link
+                width: 280px
+        &-container
+
+            width: 608px
+        &__top
+            &-group
+                flex-direction: column  
+                margin-bottom: 56px  
+        &-tabs
+            margin-top: 31px  
+            width: 286px
+            
+            justify-content: space-between
+            &__item
+                margin-left: 0
+        &-content
+            &__item
+                width: 280px
+            &__img  
+                width: 280px
+                height: 350px            
+        // ==================================.reviews===============================
+                       
+    .reviews
+        padding-top: 42px
+        &-slider
+            &__text
+                width: 630px  
+                height: 210px
+                font-family: HK Grotesk
+                font-style: normal
+                font-weight: normal
+                font-size: 20px
+                line-height: 42px
+                /* or 210% */
+
+                text-align: center
+                letter-spacing: 0.133333px
+
+                color: #183B56
+        &__name
+            width: 400px 
+            margin-bottom: 48px
+                  
+        &__slide
+            width: 80%
+            &-img
+                margin-bottom: 38px
+        &__swiper
+            &-container
+                width: 80%             
+        
+
+    // ======================================== .history =============================================
+   
+
+                   
+    .history
+        padding-top: 67px
+        padding-bottom: 50px
+        &-container
+            width: 728px  
+        &-slide
+            width: 723px
+            &__img
+                width: 322px  
+            &__info
+                padding: 15px 20px 32px 18px    
+
+        &-title
+            margin-top: 20px
+            margin-bottom: 22px
+    // ================================================ .subscribe ==================================
+    .subscribe
+        &__form
+            margin-top: 54px
+    // ================================================ .footer ===============================
+    .footer
+        padding-top: 64px
+        &-container
+            max-width: 100%
+            width: 672px
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: space-between   
+        &__link  
+            margin-bottom: 24px   
+        &-info
+            &__company
+                margin-left: 294px
+                margin-top: 24px
+            &__contacts
+                margin-top: 22px 
+                margin-left: 0
+                margin-right: 58px
+            &__navigation
+                margin-left: -27px 
+            &__servise
+                margin-left: 0 
+                margin-right: 33px       
+        &-social
+            margin-left: 12px
+@media (max-width: 767px)
+    .reviews
+        padding-top: 30px
+        &-slider
+            &__text
+                width: 500px  
+                height: 360px
+                font-size: 17px
+                line-height: 36px
+                
+
+                text-align: center
+                letter-spacing: 0.12px 
+        &__name
+            width: 400px 
+            margin-bottom: 42px       
+        &__slide
+            width: 550px
+            &-img
+                margin-bottom: 15px
+        &__swiper
+            &-container
+                width: 550px              
+            
+@media (max-width: 750px)
+    .hero
+        &-container
+            width: 590px
+            max-width: 100%  
+            background-position: -61px -18px
+    
+    .collection
+        padding-top: 80px
+        &__container
+            max-width: 580px
+        &__img1
+            width: 280px
+            height: 460px 
+        &__img2,
+        &__img3
+            width: 280px
+            height: 218px  
+    .history
+        padding-top: 67px
+        padding-bottom: 43px
+        &-container
+            width: 590px
+        &-slide
+            width: 100%
+            &__img  
+                width: 275px                            
+@media (max-width: 650px)
+     
+    .container
+        
+        width: 95%
+        &__header
+            width: 95%
+    .hero
+        &-container
+            width: 95%
+    .collection
+
+         
+        &__img1
+            width: 49%
+            height: 400px 
+        &__img2,
+        &__img3
+            width: 242px
+            height: 187px         
+             
+    .trands
+        
+        &-container
+
+            width: 95% 
+        &-content
+            &__item
+                width: 260px
+            &__img    
+
+                width: 260px
+                width: 350px
+    .history
+        padding-top: 67px
+        padding-bottom: 43px
+        &-container
+            width: 100%
+        &-slide
+            width: 95%
+            &__img  
+                width: 275px   
+        &__slider
+            &-conteiner
+                width: 95%                
+    
+    
+    .subscribe
+       
+        &-container
+            width: 95% 
+    .footer
+        padding-top: 64px
+        &-container
+            
+            width: 95%  
+        &-info
+            &__company
+                margin-left: 0
+            &__navigation
+                margin-left: 0
+            &__contacts
+                margin-left: 0                                              
+@media screen and ( max-width: 550px )
+    .container
+        max-width: 320px
+        &__header
+            width: 280px
+    .hero
+        padding-top: 0
+        &-container
+            max-width: 100% 
+            background-position: 68% 0
+            padding-left: 32px
+            padding-right: 31px
+            position: relative
+            padding-top: 380px
+            width: 320px
+            padding-bottom: 24px
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 77.51%) 
+        &-button
+            margin-top: 22px 
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px 
+            padding: 14px 35px 
+                    
+        &-title
+            max-width: 248px 
+            margin-left: 0px
+        &-description
+            font-family: Open Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 28px 
+            max-width: 300px
+            text-align: center     
+        &-wrapper
+            max-width: 100%
+            position: relative
+         
+        &-label
+            margin: 0 auto
+            padding: 3px 23px
+            width: 200px  
+        
+              
+        &-advantages
+            margin: 17px 0px 0 -18px
+            width: 293px
+            flex-wrap: wrap
+            justify-content: space-evenly   
+            &__img
+                width: 30px
+                height: 30px  
+            &__item
+                margin-right: 12px 
+                margin-bottom: 10px   
+        &-title
+            font-size: 32px
+            line-height: 40px
+            /* or 125% */
+
+            text-align: center
+            letter-spacing: 0.2px   
+        &-wrapper  
+            width: 280px                    
+    .collection
+        padding-top: 62px
+        &__wrap
+            &-img
+                flex-direction: column
+                align-items: center
+        &__img
+            &-group
+                flex-direction: row 
+                justify-content: space-between
+                width: 100%
+                margin-top: 14px
+
+        &__img1
+            width: 290px
+            height: 300px 
+        &__img2,
+        &__img3
+            width: 138px
+            height: 97px               
+        &__container
+            max-width: 290px 
+        &__title
+            font-size: 28px
+            line-height: 36px
+            /* or 129% */
+
+            text-align: center
+            letter-spacing: 0.2px
+        &__text
+            font-weight: normal
+            font-size: 16px
+            line-height: 28px
+            /* or 175% */
+            margin-top: 22px    
+            text-align: center 
+            width: 280px
+        &__link
+            display: none             
+    .trands
+        padding-top: 109px
+        &-title
+            font-size: 28px
+            line-height: 36px
+            /* identical to box height, or 129% */
+
+            text-align: center
+            letter-spacing: 0.2px
+        
+        &-container
+
+            width: 290px
+        &-tabs
+            width: 235px
+            font-size: 16px
+            line-height: 22px  
+            margin-top: 25px
+            justify-content: space-evenly
+        &__price
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px  
+            margin-left: 2px    
+        &-content
+            &__img
+                width: 140px
+                height: 170px 
+            &__item
+                width: 140px
+                height: 234px
+                margin-bottom: 19px
+            &__link
+                width: 140px
+                height: 170px 
+                &__img
+                    width: 25px
+                    height: 32px
+                    top: 33%
+                    right: 31%  
+                &__text
+                    font-size: 17px
+                    line-height: 20px
+                    /* or 118% */
+                    margin-top: 85px    
+                    text-align: center
+                    letter-spacing: 0.2px
+        &__card
+            &-name
+                font-size: 16px
+                line-height: 20px
+                /* identical to box height, or 125% */
+                margin: 13px 0px 2px 0px    
+                letter-spacing: 0.2px  
+        &__top
+            &-group
+                margin-bottom: 35px 
+
+        &__cart
+            &-img
+                width: 14px
+                height: 32px
+                right: 79px
+                bottom: -5px    
+                                    
+      
+    .reviews
+        padding-top: 40px
+        &-slider
+            &__text
+                width: 280px  
+                height: 360px
+                font-size: 18px
+                line-height: 36px
+                
+
+                text-align: center
+                letter-spacing: 0.12px 
+        &__name
+            width: 200px 
+            margin-bottom: 42px 
+            margin-top: 24px      
+        &__slide
+            width: 100%
+            &-img
+                margin-bottom: 21px
+                width: 70px
+        &__swiper
+            &-container
+                width: 100% 
+    .line
+        margin-bottom: 44px                           
+    .history
+        padding-top: 50px
+        padding-bottom: 35px
+        &-container
+            width: 280px
+        &-slide
+            width: 100%
+            flex-direction: column
+            &__img  
+                width: 270px  
+                height: 277px 
+            &__info
+                padding: 15px 5px 29px 17px
+            &__title > span
+                display: none
+            &__title    
+                font-size: 20px
+                line-height: 24px
+                /* or 120% */
+
+                letter-spacing: 0.2px 
+                margin-bottom: 18px 
+                  
+        &-title
+            font-size: 28px
+            line-height: 36px
+            /* identical to box height, or 129% */
+            margin-bottom: 17px    
+            text-align: center
+            letter-spacing: 0.2p
+        &-title > span
+            display: none
+        &-description
+            font-size: 16px
+            line-height: 28px
+            /* or 175% */
+
+            text-align: center  
+            margin: 0px auto 111px
+        &__button
+            width: 48px
+            height: 48px
+            top: 19.3%
+            &--prev
+                background: url("../img/history-mobile-button-prev.png") center no-repeat 
+                left: 30%
+            &--next              
+                background: url("../img/history-mobile-button-next.png") center no-repeat
+                left: 147px                      
+    .subscribe
+        padding-top: 63px
+        padding-bottom: 117px
+        &__form
+            width: 100%
+        &-container
+            width: 284px 
+        &__button 
+            width: 282px
+            right: 0px
+            top: 64px
+        &-title
+            font-size: 28px
+            line-height: 36px
+            text-align: center
+            letter-spacing: 0.2px
+            &__strong
+                font-weight: normal
+                font-size: 16px
+                line-height: 28px
+                /* or 175% */
+                margin-top: 27px 
+                text-align: center
+            &__strong > span
+                display: none 
+                  
+        &__input
+            padding: 17px 0px 17px 48px    
+        &__form
+            margin-top: 32px    
+
+                 
+    .footer
+        padding-top: 49px
+        padding-bottom: 85px
+        &-container
+            max-width: 100%
+            width: 280px 
+        &-social
+            order: 1
+            text-align: center
+            margin-top: 51px
+            &__group
+                margin: 23px auto 0
+            &__text
+                font-size: 14px
+                line-height: 24px 
+                width: 249px
+                margin-top: 13px   
+        &-logo
+            margin: auto       
+        &-info
+            margin-left: 13px
+            &__company
+                margin-left: 13 
+                margin-top: 16px
+            &__navigation
+                margin-left: 13px
+                margin-bottom: 16px
+            &__contacts
+                margin-left: 12px
+                margin-top: 16px        
+        &-wrapper
+            flex-direction: column   
+        &__title
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 19px
+        &__link
+            margin-bottom: 15px 
+            font-size: 14px
+            line-height: 20px           
+
+    .hero
+        &-container
+
+            
+            
+                        
+    .menu
+        &-button
+            right: 8px
+                            
+    .modal
+        &__dialog
+            max-width: 300px
+            padding: 26px 35px
+
+
+@media(hover: hover) and (pointer: fine)
+    .header
+        &-menu
+            &__link
+                position: relative
+                &::after
+                    position: absolute
+                    
+                    bottom: -4px
+                    left: 0
+                    right: 0
+                    margin: auto
+                    width: 0%
+                    content: ''
+                    color: transparent
+                    background: #aaa
+                    height: 1px
+                    transition: all .5s
+                    
+                &::before
+                    transition: all .5s    
+                &:hover:after 
+                    width: 100%    
+                    color: #555
+    .trands
+        &-tabs
+            &__item
+                position: relative
+                &::after
+                    position: absolute
+                    
+                    bottom: -4px
+                    left: 0
+                    right: 0
+                    margin: auto
+                    width: 0%
+                    content: ''
+                    color: transparent
+                    background: #aaa
+                    height: 1px
+                    transition: all .5s
+                    
+                &::before
+                    transition: all .5s    
+                &:hover:after 
+                    width: 100%    
+                    color: #555
+
+    .history
+        &__button
+            
+            &:hover
+                background-color: #6d9bdb
+                border-radius: 50%
+                transition: 0.1s
+
+
+
+    .footer
+        &__link
+            &:hover
+                color: #1565D8
+        &-social
+            &__link
+                &:hover
+                    background-color: #eee
+                    border-radius: 50%                     
+
+
+

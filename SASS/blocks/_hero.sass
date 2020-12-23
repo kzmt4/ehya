@@ -2,7 +2,7 @@
     padding-top: 23px
     
     &-container
-        width: 1280px
+        max-width: 1280px
         margin: auto
         // background: url("../img/hero-img.jpg") no-repeat 
         background-color: #E8EAE9
@@ -41,7 +41,7 @@
     &-title
         margin-top: 24px
         margin-bottom: 0
-        font-family: HK Grotesk, sans-serif
+        font-family: 'HK Grotesk', sans-serif
         font-style: normal
         font-weight: bold
         font-size: 56px
@@ -69,10 +69,13 @@
         font-style: normal
         font-weight: bold
         font-size: 18px
-        max-width: 260px
+        width: 260px
         text-align: center
         color: #FFFFFF
         margin-top: 55px
+        overflow: hidden     
+        white-space: nowrap                                  
+        text-overflow: ellipsis
     &-advantages
         margin-top: 47px
         &__text

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ehya</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="header">
@@ -15,7 +17,7 @@
                 <a href="#" class="header-logo">
                     <img src="img/logo.svg" alt="header-logo" class="header-logo__img">
                 </a>   
-                <ul class="header-menu">
+                <ul class="header-menu header-menu__mobile--hidden">
                     <li class="header-menu__item">
                         <a href="" class="header-menu__link">Главная</a>
                     </li>
@@ -34,17 +36,44 @@
 
                     </li>
                 </ul>
-                <button class="header-button">Войти</button>
-                <button class="menu-button navbar-top__menu-button">
+                <button data-href="#modal-in" data-toggle="modal" class="header-button header-button__mobile--hidden">Войти</button>
+                <button class="menu-button">
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
 
                 </button>
             </div>
-            
+            <div class="mobile">
+                 <div class="mobile__container">  
+                    <button data-href="#modal-in" data-toggle="modal" class="header-button header-button__mobile--visible">Войти</button>
+                <ul class="header-menu header-menu__mobile--visible">
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">Главная</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">Новинки</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">Тренды</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">Отзывы</a>
+                        
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="" class="header-menu__link">Контакты</a>
+        
+                    </li>
+                </ul>
+                 </div>  
+                
+                
+            </div>
         </div>
+       
     </header>
+    
     <section class="hero">
         <div class="hero-container">
             <div class="hero-wrapper">
@@ -59,7 +88,7 @@
                      отличную одежду и обновлять свой стиль. Всё это вы можете 
                      найти здесь. Начните сейчас. 
                 </p>
-                <button class="hero-button">
+                <button class="hero-button" data-toggle="modal" data-href="#modal">
                     Подобрать одежду
                 </button>
                 <ul class="hero-advantages">
@@ -81,7 +110,7 @@
         </div>
     </section>
     <section class="collection">
-        <div class="container">
+        <div class="container collection__container">
             <div class="collection-wrapper">
                 <div class="collection__wrap-img">
                     <img src="img/collection-img1.png" alt="" class="collection__img1">
@@ -106,6 +135,696 @@
             
         </div>
     </section>
+    <section class="trands">
+        <div class="trands-container">
+            <div class="trands__top-group">
+                <h3 class="trands-title">Тренды</h3>
+                <ul class="trands-tabs">
+                    <li data-target="#new" class="trands-tabs__item trands-tabs__item--active">Новинки</li>
+                    <li data-target="#best" class="trands-tabs__item">Лучшее</li>
+                    <li data-target="#tomorrow" class="trands-tabs__item">Скоро</li>
+                </ul>
+            </div>
+               
+                <div id="new" class="trands-content trands-content--active">
+                    <div class="trands-content__item">
+                        <div class="trands__img-wrap">
+                            <img src="img/minimalist-style.png" alt="Стиль минималист" class="trands-content__img">
+                        </div>
+                            
+                            <div class="trands-content__info">
+                                <div class="trands-content__text">
+                                    <h4 class="trands__card-name">Minimalist Style</h4>
+                                    <span class="trands__price">$25.7</span>
+                                </div>
+                                
+                                <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                                
+                            </div>
+                        
+                    </div>
+                   
+                    <div class="trands-content__item">
+                        <div class="trands__img-wrap">
+                            <img src="img/full-coloristy.png" alt="Стиль минималист" class="trands-content__img">
+                        </div>
+                        
+                        <div class="trands-content__info">
+                            <div class="trands-content__text">
+                                <h4 class="trands__card-name">Full Coloristy</h4>
+                                <span class="trands__price">$25.7</span>
+                            </div>
+                            
+                            <a href="#" class="trands__cart-link">
+                                <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="trands-content__item">
+                        <div class="trands__img-wrap">
+                           <img src="img/pinky-winky.png" alt="Стиль минималист" class="trands-content__img"> 
+                        </div>
+                        
+                        <div class="trands-content__info">
+                            <div class="trands-content__text">
+                                <h4 class="trands__card-name">Pinky Winky</h4>
+                                <span class="trands__price">$109</span>
+                            </div>
+                            
+                            <a href="#" class="trands__cart-link">
+                                <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <div class="trands-content__item">
+                        <div class="trands__img-wrap">
+                            <img src="img/holiday-vibes.png" alt="Стиль минималист" class="trands-content__img">
+                        </div>
+                        
+                        <div class="trands-content__info">
+                            <div class="trands-content__text">
+                                <h4 class="trands__card-name">Holiday Vibes</h4>
+                                <span class="trands__price">$51.2</span>
+                            </div>
+                            
+                        
+                            <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                        </div>
+                    </div>
+                    <div class="trands-content__item">
+                        <img src="img/swaggie-shaggy.png" alt="Стиль минималист" class="trands-content__img">
+                        <div class="trands-content__info">
+                            <div class="trands-content__text">
+                                <h4 class="trands__card-name">Swaggie Shaggy</h4>
+                                <span class="trands__price">$81.3</span>
+                            </div>
+                            
+                        
+                            <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                        </div>
+                    </div>
+                    <div class="trands-content__item">
+                        <div class="trands__img-wrap">
+                            <img src="img/red-formal.png" alt="Стиль минималист" class="trands-content__img">
+                        </div>
+                            
+                        
+                        
+                        <div class="trands-content__info">
+                            <div class="trands-content__text">
+                                <h4 class="trands__card-name">Red Formal</h4>
+                                <span class="trands__price">$66.8</span>
+                            </div>
+                            
+                        
+                            <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                        </div>
+                    </div>
+                    <div class="trands-content__item">
+                        
+                            <img src="img/red-formal.png" alt="Стиль минималист" class="trands-content__img">
+                        
+                        
+                        <div class="trands-content__info">
+                            <div class="trands-content__text">
+                                <h4 class="trands__card-name">Red Formal</h4>
+                                <span class="trands__price">$66.8</span>
+                            </div>
+                            
+                        
+                            <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                        </div>
+                    </div>
+                    <!-- <div class="trands__watch-all"></div> -->
+                   <a href="#" class="trands-content__link">
+                       <img src="img/plus.svg" alt="" class="trands-content__link__img">
+                       <span class="trands-content__link trands-content__link__text">Смотреть<br> больше коллекций</span> 
+                   </a> 
+                </div>
+        
+<!-- ============================./div id="new" class="trands-content"> -->
+
+        <div id="best" class="trands-content ">
+            <div class="trands-content__item">
+                
+                <img src="img/red-formal.png" alt="Стиль минималист" class="trands-content__img">
+            
+            
+            <div class="trands-content__info">
+                <div class="trands-content__text">
+                    <h4 class="trands__card-name">Red Formal</h4>
+                    <span class="trands__price">$66.8</span>
+                </div>
+                
+            
+                <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+            </div>
+        </div>
+           
+            <div class="trands-content__item">
+                <div class="trands__img-wrap">
+                    <img src="img/full-coloristy.png" alt="Стиль минималист" class="trands-content__img">
+                </div>
+                
+                <div class="trands-content__info">
+                    <div class="trands-content__text">
+                        <h4 class="trands__card-name">Full Coloristy</h4>
+                        <span class="trands__price">$25.7</span>
+                    </div>
+                    
+                
+                    <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                </div>
+            </div>
+            <div class="trands-content__item">
+                <div class="trands__img-wrap">
+                   <img src="img/pinky-winky.png" alt="Стиль минималист" class="trands-content__img"> 
+                </div>
+                
+                <div class="trands-content__info">
+                    <div class="trands-content__text">
+                        <h4 class="trands__card-name">Pinky Winky</h4>
+                        <span class="trands__price">$109</span>
+                    </div>
+                    
+                
+                    <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                </div>
+            </div>
+            <div class="trands-content__item">
+                <div class="trands__img-wrap">
+                    <img src="img/holiday-vibes.png" alt="Стиль минималист" class="trands-content__img">
+                </div>
+                
+                <div class="trands-content__info">
+                    <div class="trands-content__text">
+                        <h4 class="trands__card-name">Holiday Vibes</h4>
+                        <span class="trands__price">$51.2</span>
+                    </div>
+                    
+                
+                    <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                </div>
+            </div>
+            <div class="trands-content__item">
+                <img src="img/swaggie-shaggy.png" alt="Стиль минималист" class="trands-content__img">
+                <div class="trands-content__info">
+                    <div class="trands-content__text">
+                        <h4 class="trands__card-name">Swaggie Shaggy</h4>
+                        <span class="trands__price">$81.3</span>
+                    </div>
+                    
+                
+                    <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                </div>
+            </div>
+            <div class="trands-content__item">
+                <div class="trands__img-wrap">
+                    <img src="img/red-formal.png" alt="Стиль минималист" class="trands-content__img">
+                </div>
+                    
+                
+                
+                <div class="trands-content__info">
+                    <div class="trands-content__text">
+                        <h4 class="trands__card-name">Red Formal</h4>
+                        <span class="trands__price">$66.8</span>
+                    </div>
+                    
+                
+                    <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                </div>
+            </div>
+            
+            <div class="trands-content__item">
+                <div class="trands__img-wrap">
+                    <img src="img/minimalist-style.png" alt="Стиль минималист" class="trands-content__img">
+                </div>
+                    
+                    <div class="trands-content__info">
+                        <div class="trands-content__text">
+                            <h4 class="trands__card-name">Minimalist Style</h4>
+                            <span class="trands__price">$25.7</span>
+                        </div>
+                        
+                    
+                        <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                    </div>
+                
+            </div>
+            <!-- <div class="trands__watch-all"></div> -->
+           <a href="#" class="trands-content__link">
+               <img src="img/plus.svg" alt="" class="trands-content__link trands-content__link__img">
+               <span class="trands-content__link trands-content__link__text">Смотреть<br> больше коллекций</span> 
+           </a> 
+        </div>
+        <!-- ==========================<div id="best" class="trands-content"> -->
+            <div id="tomorrow" class="trands-content">
+               
+               
+                <div class="trands-content__item">
+                    <div class="trands__img-wrap">
+                        <img src="img/full-coloristy.png" alt="Стиль минималист" class="trands-content__img">
+                    </div>
+                    
+                    <div class="trands-content__info">
+                        <div class="trands-content__text">
+                            <h4 class="trands__card-name">Full Coloristy</h4>
+                            <span class="trands__price">$25.7</span>
+                        </div>
+                        
+                    
+                        <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                    </div>
+                </div>
+                
+                <div class="trands-content__item">
+                    <div class="trands__img-wrap">
+                        <img src="img/holiday-vibes.png" alt="Стиль минималист" class="trands-content__img">
+                    </div>
+                    
+                    <div class="trands-content__info">
+                        <div class="trands-content__text">
+                            <h4 class="trands__card-name">Holiday Vibes</h4>
+                            <span class="trands__price">$51.2</span>
+                        </div>
+                        
+                    
+                        <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                    </div>
+                </div>
+                <div class="trands-content__item">
+                    <div class="trands__img-wrap">
+                        <img src="img/minimalist-style.png" alt="Стиль минималист" class="trands-content__img">
+                    </div>
+                        
+                        <div class="trands-content__info">
+                            <div class="trands-content__text">
+                                <h4 class="trands__card-name">Minimalist Style</h4>
+                                <span class="trands__price">$25.7</span>
+                            </div>
+                            
+                        
+                            <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                        </div>
+                    
+                </div>
+                <div class="trands-content__item">
+                    <img src="img/swaggie-shaggy.png" alt="Стиль минималист" class="trands-content__img">
+                    <div class="trands-content__info">
+                        <div class="trands-content__text">
+                            <h4 class="trands__card-name">Swaggie Shaggy</h4>
+                            <span class="trands__price">$81.3</span>
+                        </div>
+                        
+                    
+                        <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                    </div>
+                </div>
+                <div class="trands-content__item">
+                    <div class="trands__img-wrap">
+                       <img src="img/pinky-winky.png" alt="Стиль минималист" class="trands-content__img"> 
+                    </div>
+                    
+                    <div class="trands-content__info">
+                        <div class="trands-content__text">
+                            <h4 class="trands__card-name">Pinky Winky</h4>
+                            <span class="trands__price">$109</span>
+                        </div>
+                        
+                    
+                        <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                    </div>
+                </div>
+                <div class="trands-content__item">
+                    <div class="trands__img-wrap">
+                        <img src="img/red-formal.png" alt="Стиль минималист" class="trands-content__img">
+                    </div>
+                        
+                    
+                    
+                    <div class="trands-content__info">
+                        <div class="trands-content__text">
+                            <h4 class="trands__card-name">Red Formal</h4>
+                            <span class="trands__price">$66.8</span>
+                        </div>
+                        
+                    
+                        <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                    </div>
+                </div>
+                <div class="trands-content__item">
+                    
+                        <img src="img/red-formal.png" alt="Стиль минималист" class="trands-content__img">
+                    
+                    
+                    <div class="trands-content__info">
+                        <div class="trands-content__text">
+                            <h4 class="trands__card-name">Red Formal</h4>
+                            <span class="trands__price">$66.8</span>
+                        </div>
+                        
+                    
+                        <a href="#" class="trands__cart-link">
+                                    <img src="img/shopping-cart.svg" alt="" class="trands__cart-img">
+                                </a>
+                    </div>
+                </div>
+                <!-- <div class="trands__watch-all"></div> -->
+               <a href="#" class="trands-content__link">
+                   <img src="img/plus.svg" alt="" class="trands-content__link trands-content__link__img">
+                   <span class="trands-content__link trands-content__link__text">Смотреть<br> больше коллекций</span> 
+               </a> 
+            </div>
+            <!-- ++++++++++++++++++++++++ ,/div id="tomorrow" class="trands-content"> -->
+        </div>    
+    </section>
+    <section class="reviews">
+        <div class="reviews__container">
+            <div class="swiper-container reviews__swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide reviews__slide">
+                        <img src="img/quote-left.svg" alt="Кавычки" class="reviews__slide-img">
+                        <p class="reviews-slider__text">
+                            Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
+                             Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                             неподвластны времени, 
+                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                        </p> 
+                        <span class="reviews__name">
+                            Алисия Пума - клиент Fashun
+                        </span>                                                                
+                    
+                    </div>
+                    <div class="swiper-slide reviews__slide">
+                        <img src="img/quote-left.svg" alt="Кавычки" class="reviews__slide-img">
+                        <p class="reviews-slider__text">
+                            Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
+                             Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                             неподвластны времени, 
+                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                            Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
+                             Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                             неподвластны времени, 
+                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                            Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
+                             Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                             неподвластны времени, 
+                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                        </p> 
+                        <span class="reviews__name">
+                            Мерелин Шлюха - клиент Fashun
+                        </span>           
+                    </div>
+                    <div class="swiper-slide reviews__slide">
+                        <img src="img/quote-left.svg" alt="Кавычки" class="reviews__slide-img">
+                        <p class="reviews-slider__text">
+                            Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
+                             Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                             неподвластны времени, 
+                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                            Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
+                             Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                             неподвластны времени, 
+                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                            Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
+                             Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                             неподвластны времени, 
+                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                            Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
+                            неподвластны времени, 
+                           а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
+                        </p> 
+                        <span class="reviews__name">
+                            Кармэн Электра - клиент Fashun
+                        </span>           
+                    </div>
+                    
+                    
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination reviews__swiper-pagination"></div>
+            
+
+            
+               
+            </div>
+        </div>
+      
+
+    </section>
+    <section class="history">
+        <div class="history-container">
+            <div class="line"></div>
+            <div class="history__wrapper">
+                   <div class="history-text">
+                <span class="history-label">Истории</span>
+                <h3 class="history-title"><span>Это</span> История Fashun</h3>
+                <p class="history-description">
+                    Ознакомьтесь с нашим рассказом о моде.
+    Написано нашим дизайнером и специалистом.
+                </p> 
+               
+             </div>
+    <div class="swiper-container history__slider-container">        
+                <button class="history__button history__button--prev"></button>
+                <button class="history__button history__button--next"></button>
+     
+              
+         <!-- If we need navigation buttons -->
+         
+        
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper history__slider-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide history-slide"> 
+                
+                    <div class="history-slide__item">
+                        <div class="history__img-wrap">
+                            <img src="img/history-img1.png" alt="" class="history-slide__img"> 
+                        </div>
+                    
+                        <div class="history-slide__info">
+                            <h5 class="history-slide__title">
+                                Mix & Match Style 01: повседневный и формальный стиль
+                            </h5>
+                            <a href="#" class="history-slide__link">Читать далее</a>
+                        </div>
+                     </div>
+                    <div class="history-slide__item">
+                        <div class="history__img-wrap">
+                        <img src="img/history-img2.png" alt="" class="history-slide__img"> 
+                        </div>
+                    
+                        <div class="history-slide__info">
+                            <h5 class="history-slide__title">
+                                Лайфхак: Купите одежду Thrifft на воскресном рынке
+
+                            </h5>
+                            <a href="#" class="history-slide__link">Читать далее</a>
+                        </div>
+                 
+                    </div>
+                
+            </div> 
+           
+            
+         
+        </div>
+       
     
-</body>
+       
+    
+    
+    </div>
+            </div>
+         
+
+
+</div>
+</section>
+
+<section class="subscribe">
+    <div class="subscribe-container">
+        <h2 class="subscribe-title ">
+            Подпишитесь
+            <span class="subscribe-title__strong">Напишите свой адрес электронной почты.<span><br></span> 
+                Мы будем присылать вам новости из мира моды.</span>
+        </h2>
+        <form action="send.php" method="POST" class="subscribe__form form">
+            <img src="img/write.svg" alt="" class="subscribe__icon">
+            <input type="email" class="subscribe__input" placeholder="Ваш email" name="email" required>
+            <button class="subscribe__button">
+                Подписаться 
+            </button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-wrapper">
+            <div class="footer-social">
+                <img src="img/logo.svg" alt="" class="footer-logo">
+                <span class="footer-social__text">
+                    Интернет-магазин брендовой одежды с оплатой онлайн
+                </span>
+                <div class="footer-social__group">
+                    <a href="#" class="footer-social__link"><img src="img/google1.svg" alt="гугол"></a>
+                    <a href="#" class="footer-social__link"><img src="img/twit.svg" alt="твитер"></a>
+                    <a href="#" class="footer-social__link"><img src="img/inst.svg" alt="инста"></a>
+                    <a href="#" class="footer-social__link"><img src="img/in.svg" alt="ин?"></a> 
+                </div>
+                
+
+            </div>
+            <div class="footer-info footer-info__navigation">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__links">
+                    <li class="footer__link">Новая коллекция</li>
+                    <li class="footer__link">Трендовая одежда</li>
+                    <li class="footer__link">Истории Fashun</li>
+                    <li class="footer__link">Отзывы клиентов</li>
+                    <li class="footer__link">Вся одежда</li>
+                </ul>
+            </div>
+            <div class="footer-info footer-info__servise">
+                <h3 class="footer__title">Сервисы</h3>
+                <ul class="footer__links">
+                    <li class="footer__link">Рассрочка на 6 мес</li>
+                    <li class="footer__link">Кредит на 12 мес</li>
+                    <li class="footer__link">Доставка по РФ</li>
+                    <li class="footer__link">Возврат покупок</li>
+                    <li class="footer__link">Акции и кэшбек</li>
+                </ul>
+            </div>
+            <div class="footer-info footer-info__company">
+                <h3 class="footer__title">Компания</h3>
+                <ul class="footer__links">
+                    <li class="footer__link">Об Ehya</li>
+                    <li class="footer__link">Правила сайта</li>
+                    <li class="footer__link">Обработка данных</li>
+                    <li class="footer__link">Вакансии</li>
+                   
+                </ul>
+            </div>
+            <div class="footer-info footer-info__contacts">
+                <h3 class="footer__title">Контакты</h3>
+                <ul class="footer__links">
+                    <li class="footer__link">Группа Фейсбук</li>
+                    <li class="footer__link">Канал Youtube</li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<div class="modal" id="modal">
+    <div class="modal__overlay">
+
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+        <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="close">
+        </a>
+            <h3 class="modal__title modal__title--mb-input modal__title--modal">
+               Проконсультироваться
+            </h3>
+                <form action="send.php" method="POST" class="modal__form form">
+                    <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="3" >
+                    <input type="tel" class="input modal__input phoneInput" placeholder="Ваш номер*" name="phone" required minlength="18">
+                    <input type="email" class="input modal__input" placeholder="Ваш Email*" name="email" required>
+                    
+                    <div class="modal__form modal__form--button-flex"> 
+
+                        <button class="button modal__button">Отправить</button>
+                        <div class="modal__info">*Вы согласны с обработкой персональных данных</div>
+                    </div> 
+                    
+                </form>
+        
+    </div>
+    <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+<div class="modal" id="modal-in">
+    <div class="modal__overlay">
+
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+        <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="close">
+        </a>
+            <h3 class="modal__title modal__title--mb-input modal__title--modal">
+               Войти
+            </h3>
+                <form action="send.php" method="POST" class="modal__form form">
+                    <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="3" >
+                    <input type="tel" class="input modal__input phoneInput" placeholder="Ваш номер*" name="phone" required minlength="18">
+                    <input type="email" class="input modal__input" placeholder="Ваш Email*" name="email" required>
+                    
+                    <div class="modal__form modal__form--button-flex"> 
+
+                        <button class="button modal__button">Войти</button>
+                        <div class="modal__info">*Забыли пароль?</div>
+                    </div> 
+                    
+                </form>
+        
+    </div>
+    <!-- /.modal__dialog -->
+</div>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="JS/jquery.validate.min.js"></script>
+  <script src="JS/jquery.mask.min.js"></script>
+  <script src="JS/main.js"></script>
+
+
+    </body>
 </html>
