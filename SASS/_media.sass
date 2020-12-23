@@ -32,10 +32,10 @@
             width: 992px 
     .reviews
         padding-top: 30px
-        &-slider
-            &__text
-                max-width: 992px  
-                height: 203px 
+        
+        &__text
+            max-width: 992px  
+            height: 203px 
     .history
         padding-top: 67px
         padding-bottom: 43px
@@ -53,7 +53,87 @@
         padding-top: 64px
         &-container
             max-width: 100%
-            width: 992px                                                   
+            width: 992px    
+
+
+@media (min-width: 1100px)
+    .header
+        &-menu
+            &__link
+                position: relative
+                &::after
+                    position: absolute
+                    
+                    bottom: -4px
+                    left: 0
+                    right: 0
+                    margin: auto
+                    width: 0%
+                    content: ''
+                    color: transparent
+                    background: #aaa
+                    height: 1px
+                    transition: all .5s
+                    
+                &::before
+                    transition: all .5s    
+                &:hover:after 
+                    width: 100%    
+                    color: #555
+    .trands
+        &-tabs
+            &__item
+                position: relative
+                &::after
+                    position: absolute
+                    
+                    bottom: -4px
+                    left: 0
+                    right: 0
+                    margin: auto
+                    width: 0%
+                    content: ''
+                    color: transparent
+                    background: #aaa
+                    height: 1px
+                    transition: all .5s
+                    
+                &::before
+                    transition: all .5s    
+                &:hover:after 
+                    width: 100%    
+                    color: #555
+
+
+
+
+    .history
+        &__button
+            &--prev
+                &:hover
+
+                    background: url("../img/button-prev.svg") center no-repeat 
+                    left: 0
+            &--next 
+                &:hover             
+                    background: url("../img/button-next.svg") center no-repeat
+                    left: 75px
+
+            
+          
+                
+
+
+
+    .footer
+        &__link
+            &:hover
+                color: #1565D8
+        &-social
+            &__link
+                &:hover
+                    background-color: #eee
+                    border-radius: 50%  
 
 @media (max-width: 992px) 
      
@@ -136,10 +216,10 @@
             width: 768px 
     .reviews
         padding-top: 30px
-        &-slider
-            &__text
-                max-width: 600px  
-                height: 203px 
+        
+        &__text
+            max-width: 600px  
+            height: 203px 
      
     .history
         padding-top: 67px
@@ -161,14 +241,14 @@
             text-align: center
         &__slider
             &-container
-                width: 100%
+                width: 91%
         &-slide
             width: 100%
             justify-content: space-evenly 
         &-label
             margin: 0 auto
         &__button
-            top: 28.5%  
+            top: 29%  
             &--prev
                 left: 41%
             &--next
@@ -205,6 +285,15 @@
         &-social
             margin-left: 10px   
 
+        
+                                   
+
+@media (max-width: 800px)
+    .hero
+        &-container
+            width: 715px
+
+            
 
 
 @media (max-width: 768px)
@@ -347,21 +436,21 @@
                        
     .reviews
         padding-top: 42px
-        &-slider
-            &__text
-                width: 630px  
-                height: 210px
-                font-family: HK Grotesk
-                font-style: normal
-                font-weight: normal
-                font-size: 20px
-                line-height: 42px
-                /* or 210% */
+       
+        &__text
+            width: 630px  
+            height: 210px
+            font-family: HK Grotesk
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 42px
+            /* or 210% */
 
-                text-align: center
-                letter-spacing: 0.133333px
+            text-align: center
+            letter-spacing: 0.133333px
 
-                color: #183B56
+            color: #183B56
         &__name
             width: 400px 
             margin-bottom: 48px
@@ -385,11 +474,14 @@
         &-container
             width: 728px  
         &-slide
-            width: 723px
+            width: 712px
             &__img
                 width: 322px  
             &__info
-                padding: 15px 20px 32px 18px    
+                padding: 15px 20px 32px 18px  
+        &__slider
+            &-container
+                width: 99%          
 
         &-title
             margin-top: 20px
@@ -424,15 +516,18 @@
                 margin-right: 33px       
         &-social
             margin-left: 12px
+    .modal
+        &__dialog
+            padding: 33px 58px        
 @media (max-width: 767px)
     .reviews
         padding-top: 30px
-        &-slider
-            &__text
-                width: 500px  
-                height: 360px
-                font-size: 17px
-                line-height: 36px
+        
+        &__text
+            width: 500px  
+            height: 360px
+            font-size: 17px
+            line-height: 36px
                 
 
                 text-align: center
@@ -466,15 +561,21 @@
         &__img3
             width: 280px
             height: 218px  
+
+
     .history
         padding-top: 67px
         padding-bottom: 43px
         &-container
-            width: 590px
-        &-slide
             width: 100%
+        &-slide
+            width: 560px
             &__img  
-                width: 275px                            
+                width: 250px 
+        &__slider
+            &-container
+                width: 83%          
+
 @media (max-width: 650px)
      
     .container
@@ -508,18 +609,27 @@
 
                 width: 260px
                 width: 350px
+            &__link
+                width: 260px    
     .history
         padding-top: 67px
         padding-bottom: 43px
         &-container
             width: 100%
         &-slide
-            width: 95%
+            width: 100%
             &__img  
-                width: 275px   
+                width: 265px   
         &__slider
             &-conteiner
-                width: 95%                
+                width: 564px   
+         
+        &__slider
+            &-container
+                width: 82%
+        &-slide
+            &__img  
+                width: 220px                          
     
     
     .subscribe
@@ -537,7 +647,14 @@
             &__navigation
                 margin-left: 0
             &__contacts
-                margin-left: 0                                              
+                margin-left: 0     
+
+
+
+
+
+         
+
 @media screen and ( max-width: 550px )
     .container
         max-width: 320px
@@ -548,7 +665,7 @@
         &-container
             max-width: 100% 
             background-position: 68% 0
-            padding-left: 32px
+            padding-left: 31px
             padding-right: 31px
             position: relative
             padding-top: 380px
@@ -572,7 +689,7 @@
             padding: 14px 35px 
                     
         &-title
-            max-width: 248px 
+            max-width: 300px 
             margin-left: 0px
         &-description
             font-family: Open Sans
@@ -585,6 +702,7 @@
         &-wrapper
             max-width: 100%
             position: relative
+            width: 320px
          
         &-label
             margin: 0 auto
@@ -719,12 +837,12 @@
       
     .reviews
         padding-top: 40px
-        &-slider
-            &__text
-                width: 280px  
-                height: 360px
-                font-size: 18px
-                line-height: 36px
+       
+        &__text
+            width: 280px  
+            height: 360px
+            font-size: 18px
+            line-height: 36px
                 
 
                 text-align: center
@@ -765,6 +883,9 @@
 
                 letter-spacing: 0.2px 
                 margin-bottom: 18px 
+        &__slider
+            &-container
+                width: 100%        
                   
         &-title
             font-size: 28px
@@ -787,7 +908,7 @@
             height: 48px
             top: 19.3%
             &--prev
-                background: url("../img/history-mobile-button-prev.png") center no-repeat 
+                background: url("../img/mobile-button-prev.png") center no-repeat 
                 left: 30%
             &--next              
                 background: url("../img/history-mobile-button-next.png") center no-repeat
@@ -881,73 +1002,73 @@
             padding: 26px 35px
 
 
-@media(hover: hover) and (pointer: fine)
-    .header
-        &-menu
-            &__link
-                position: relative
-                &::after
-                    position: absolute
+// @media(hover: hover) and (pointer: fine)
+//     .header
+//         &-menu
+//             &__link
+//                 position: relative
+//                 &::after
+//                     position: absolute
                     
-                    bottom: -4px
-                    left: 0
-                    right: 0
-                    margin: auto
-                    width: 0%
-                    content: ''
-                    color: transparent
-                    background: #aaa
-                    height: 1px
-                    transition: all .5s
+//                     bottom: -4px
+//                     left: 0
+//                     right: 0
+//                     margin: auto
+//                     width: 0%
+//                     content: ''
+//                     color: transparent
+//                     background: #aaa
+//                     height: 1px
+//                     transition: all .5s
                     
-                &::before
-                    transition: all .5s    
-                &:hover:after 
-                    width: 100%    
-                    color: #555
-    .trands
-        &-tabs
-            &__item
-                position: relative
-                &::after
-                    position: absolute
+//                 &::before
+//                     transition: all .5s    
+//                 &:hover:after 
+//                     width: 100%    
+//                     color: #555
+//     .trands
+//         &-tabs
+//             &__item
+//                 position: relative
+//                 &::after
+//                     position: absolute
                     
-                    bottom: -4px
-                    left: 0
-                    right: 0
-                    margin: auto
-                    width: 0%
-                    content: ''
-                    color: transparent
-                    background: #aaa
-                    height: 1px
-                    transition: all .5s
+//                     bottom: -4px
+//                     left: 0
+//                     right: 0
+//                     margin: auto
+//                     width: 0%
+//                     content: ''
+//                     color: transparent
+//                     background: #aaa
+//                     height: 1px
+//                     transition: all .5s
                     
-                &::before
-                    transition: all .5s    
-                &:hover:after 
-                    width: 100%    
-                    color: #555
+//                 &::before
+//                     transition: all .5s    
+//                 &:hover:after 
+//                     width: 100%    
+//                     color: #555
 
-    .history
-        &__button
+//     .history
+//         &__button
             
-            &:hover
-                background-color: #6d9bdb
-                border-radius: 50%
-                transition: 0.1s
+//             &:hover
+//                 background-color: #6d9bdb
+//                 border-radius: 50%
+//                 transition: 0.1s
 
 
 
-    .footer
-        &__link
-            &:hover
-                color: #1565D8
-        &-social
-            &__link
-                &:hover
-                    background-color: #eee
-                    border-radius: 50%                     
+//     .footer
+//         &__link
+//             &:hover
+//                 color: #1565D8
+//         &-social
+//             &__link
+//                 &:hover
+//                     background-color: #eee
+//                     border-radius: 50%                     
 
 
 

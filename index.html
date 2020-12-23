@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-fix">
     <header class="header">
         <div class="container container__header">
             <div class="header-wrap">
-                <a href="#" class="header-logo">
+                <a href="index.html" class="header-logo">
                     <img src="img/logo.svg" alt="header-logo" class="header-logo__img">
                 </a>   
-                <ul class="header-menu header-menu__mobile--hidden">
+                <ul class="header-menu header-menu__mobile header-menu__mobile--hidden">
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Главная</a>
+                        <a href="index.html#hero" class="header-menu__link">Главная</a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Новинки</a>
+                        <a href="index.html#collection" class="header-menu__link">Новинки</a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Тренды</a>
+                        <a href="index.html#trands" class="header-menu__link">Тренды</a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Отзывы</a>
+                        <a href="index.html#reviews" class="header-menu__link">Отзывы</a>
                         
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Контакты</a>
+                        <a href="index.html#contacts" class="header-menu__link">Контакты</a>
 
                     </li>
                 </ul>
-                <button data-href="#modal-in" data-toggle="modal" class="header-button header-button__mobile--hidden">Войти</button>
+                <button data-href="#modal-in" data-toggle="modal" class="header-button header-button__mobile header-button__mobile--hidden">Войти</button>
                 <button class="menu-button">
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
@@ -46,23 +46,23 @@
             </div>
             <div class="mobile">
                  <div class="mobile__container">  
-                    <button data-href="#modal-in" data-toggle="modal" class="header-button header-button__mobile--visible">Войти</button>
-                <ul class="header-menu header-menu__mobile--visible">
+                    <button data-href="#modal-in" data-toggle="modal" class="header-button header-button__mobile header-button__mobile--visible">Войти</button>
+                <ul class="header-menu header-menu__mobile header-menu__mobile--visible">
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Главная</a>
+                        <a href="index.html#hero" class="header-menu__link">Главная</a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Новинки</a>
+                        <a href="index.html#collection" class="header-menu__link">Новинки</a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Тренды</a>
+                        <a href="index.html#trands" class="header-menu__link">Тренды</a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Отзывы</a>
+                        <a href="index.html#reviews" class="header-menu__link">Отзывы</a>
                         
                     </li>
                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">Контакты</a>
+                        <a href="index.html#contacts" class="header-menu__link">Контакты</a>
         
                     </li>
                 </ul>
@@ -74,13 +74,13 @@
        
     </header>
     
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-container">
             <div class="hero-wrapper">
                 <span class="hero-label">
                     # READY TO BE COOL
                 </span>
-                <h1 class="hero-title">
+                <h1 lang="en" class="hero-title">
                     Каждый может быть крутым<br>и модным
                 </h1>
                 <p class="hero-description">
@@ -91,7 +91,7 @@
                 <button class="hero-button" data-toggle="modal" data-href="#modal">
                     Подобрать одежду
                 </button>
-                <ul class="hero-advantages">
+                <ul lang="en" class="hero-advantages">
                     <li class="hero-advantages__item">
                         <img src="img/icon_get_money.svg" alt="Онлайн оплата" class="hero-advantages__img">
                         <span class="hero-advantages__text">Онлайн оплата</span>
@@ -109,7 +109,7 @@
 
         </div>
     </section>
-    <section class="collection">
+    <section class="collection" id="collection">
         <div class="container collection__container">
             <div class="collection-wrapper">
                 <div class="collection__wrap-img">
@@ -121,7 +121,7 @@
                     
                 </div>
                 <div class="collection__info">
-                    <h3 class="collection__title">Новая зимняя коллекция</h3>
+                    <h3 lang="en" class="collection__title">Новая зимняя коллекция</h3>
                     <p class="collection__text">Сейчас зимний сезон. Вы можете увидеть больше из 
                         этой коллекции, нажав кнопку ниже.
                          Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20,
@@ -135,10 +135,10 @@
             
         </div>
     </section>
-    <section class="trands">
+    <section class="trands" id="trands">
         <div class="trands-container">
             <div class="trands__top-group">
-                <h3 class="trands-title">Тренды</h3>
+                <h3 lang="en" class="trands-title">Тренды</h3>
                 <ul class="trands-tabs">
                     <li data-target="#new" class="trands-tabs__item trands-tabs__item--active">Новинки</li>
                     <li data-target="#best" class="trands-tabs__item">Лучшее</li>
@@ -154,7 +154,7 @@
                             
                             <div class="trands-content__info">
                                 <div class="trands-content__text">
-                                    <h4 class="trands__card-name">Minimalist Style</h4>
+                                    <h4 lang="en" class="trands__card-name">Minimalist Style</h4>
                                     <span class="trands__price">$25.7</span>
                                 </div>
                                 
@@ -173,7 +173,7 @@
                         
                         <div class="trands-content__info">
                             <div class="trands-content__text">
-                                <h4 class="trands__card-name">Full Coloristy</h4>
+                                <h4 lang="en" class="trands__card-name">Full Coloristy</h4>
                                 <span class="trands__price">$25.7</span>
                             </div>
                             
@@ -190,7 +190,7 @@
                         
                         <div class="trands-content__info">
                             <div class="trands-content__text">
-                                <h4 class="trands__card-name">Pinky Winky</h4>
+                                <h4 lang="en" class="trands__card-name">Pinky Winky</h4>
                                 <span class="trands__price">$109</span>
                             </div>
                             
@@ -207,7 +207,7 @@
                         
                         <div class="trands-content__info">
                             <div class="trands-content__text">
-                                <h4 class="trands__card-name">Holiday Vibes</h4>
+                                <h4 lang="en" class="trands__card-name">Holiday Vibes</h4>
                                 <span class="trands__price">$51.2</span>
                             </div>
                             
@@ -221,7 +221,7 @@
                         <img src="img/swaggie-shaggy.png" alt="Стиль минималист" class="trands-content__img">
                         <div class="trands-content__info">
                             <div class="trands-content__text">
-                                <h4 class="trands__card-name">Swaggie Shaggy</h4>
+                                <h4 lang="en" class="trands__card-name">Swaggie Shaggy</h4>
                                 <span class="trands__price">$81.3</span>
                             </div>
                             
@@ -240,7 +240,7 @@
                         
                         <div class="trands-content__info">
                             <div class="trands-content__text">
-                                <h4 class="trands__card-name">Red Formal</h4>
+                                <h4 lang="en" class="trands__card-name">Red Formal</h4>
                                 <span class="trands__price">$66.8</span>
                             </div>
                             
@@ -257,7 +257,7 @@
                         
                         <div class="trands-content__info">
                             <div class="trands-content__text">
-                                <h4 class="trands__card-name">Red Formal</h4>
+                                <h4 lang="en" class="trands__card-name">Red Formal</h4>
                                 <span class="trands__price">$66.8</span>
                             </div>
                             
@@ -284,7 +284,7 @@
             
             <div class="trands-content__info">
                 <div class="trands-content__text">
-                    <h4 class="trands__card-name">Red Formal</h4>
+                    <h4 lang="en" class="trands__card-name">Red Formal</h4>
                     <span class="trands__price">$66.8</span>
                 </div>
                 
@@ -302,7 +302,7 @@
                 
                 <div class="trands-content__info">
                     <div class="trands-content__text">
-                        <h4 class="trands__card-name">Full Coloristy</h4>
+                        <h4 lang="en" class="trands__card-name">Full Coloristy</h4>
                         <span class="trands__price">$25.7</span>
                     </div>
                     
@@ -319,7 +319,7 @@
                 
                 <div class="trands-content__info">
                     <div class="trands-content__text">
-                        <h4 class="trands__card-name">Pinky Winky</h4>
+                        <h4 lang="en" class="trands__card-name">Pinky Winky</h4>
                         <span class="trands__price">$109</span>
                     </div>
                     
@@ -336,7 +336,7 @@
                 
                 <div class="trands-content__info">
                     <div class="trands-content__text">
-                        <h4 class="trands__card-name">Holiday Vibes</h4>
+                        <h4 lang="en" class="trands__card-name">Holiday Vibes</h4>
                         <span class="trands__price">$51.2</span>
                     </div>
                     
@@ -350,7 +350,7 @@
                 <img src="img/swaggie-shaggy.png" alt="Стиль минималист" class="trands-content__img">
                 <div class="trands-content__info">
                     <div class="trands-content__text">
-                        <h4 class="trands__card-name">Swaggie Shaggy</h4>
+                        <h4 lang="en" class="trands__card-name">Swaggie Shaggy</h4>
                         <span class="trands__price">$81.3</span>
                     </div>
                     
@@ -369,7 +369,7 @@
                 
                 <div class="trands-content__info">
                     <div class="trands-content__text">
-                        <h4 class="trands__card-name">Red Formal</h4>
+                        <h4 lang="en" class="trands__card-name">Red Formal</h4>
                         <span class="trands__price">$66.8</span>
                     </div>
                     
@@ -387,7 +387,7 @@
                     
                     <div class="trands-content__info">
                         <div class="trands-content__text">
-                            <h4 class="trands__card-name">Minimalist Style</h4>
+                            <h4 lang="en" class="trands__card-name">Minimalist Style</h4>
                             <span class="trands__price">$25.7</span>
                         </div>
                         
@@ -415,7 +415,7 @@
                     
                     <div class="trands-content__info">
                         <div class="trands-content__text">
-                            <h4 class="trands__card-name">Full Coloristy</h4>
+                            <h4 lang="en" class="trands__card-name">Full Coloristy</h4>
                             <span class="trands__price">$25.7</span>
                         </div>
                         
@@ -433,7 +433,7 @@
                     
                     <div class="trands-content__info">
                         <div class="trands-content__text">
-                            <h4 class="trands__card-name">Holiday Vibes</h4>
+                            <h4 lang="en" class="trands__card-name">Holiday Vibes</h4>
                             <span class="trands__price">$51.2</span>
                         </div>
                         
@@ -450,7 +450,7 @@
                         
                         <div class="trands-content__info">
                             <div class="trands-content__text">
-                                <h4 class="trands__card-name">Minimalist Style</h4>
+                                <h4 lang="en" class="trands__card-name">Minimalist Style</h4>
                                 <span class="trands__price">$25.7</span>
                             </div>
                             
@@ -465,7 +465,7 @@
                     <img src="img/swaggie-shaggy.png" alt="Стиль минималист" class="trands-content__img">
                     <div class="trands-content__info">
                         <div class="trands-content__text">
-                            <h4 class="trands__card-name">Swaggie Shaggy</h4>
+                            <h4 lang="en" class="trands__card-name">Swaggie Shaggy</h4>
                             <span class="trands__price">$81.3</span>
                         </div>
                         
@@ -482,7 +482,7 @@
                     
                     <div class="trands-content__info">
                         <div class="trands-content__text">
-                            <h4 class="trands__card-name">Pinky Winky</h4>
+                            <h4 lang="en" class="trands__card-name">Pinky Winky</h4>
                             <span class="trands__price">$109</span>
                         </div>
                         
@@ -501,7 +501,7 @@
                     
                     <div class="trands-content__info">
                         <div class="trands-content__text">
-                            <h4 class="trands__card-name">Red Formal</h4>
+                            <h4 lang="en" class="trands__card-name">Red Formal</h4>
                             <span class="trands__price">$66.8</span>
                         </div>
                         
@@ -518,7 +518,7 @@
                     
                     <div class="trands-content__info">
                         <div class="trands-content__text">
-                            <h4 class="trands__card-name">Red Formal</h4>
+                            <h4 lang="en" class="trands__card-name">Red Formal</h4>
                             <span class="trands__price">$66.8</span>
                         </div>
                         
@@ -537,7 +537,7 @@
             <!-- ++++++++++++++++++++++++ ,/div id="tomorrow" class="trands-content"> -->
         </div>    
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="reviews__container">
             <div class="swiper-container reviews__swiper-container">
                 <!-- Additional required wrapper -->
@@ -545,20 +545,20 @@
                     <!-- Slides -->
                     <div class="swiper-slide reviews__slide">
                         <img src="img/quote-left.svg" alt="Кавычки" class="reviews__slide-img">
-                        <p class="reviews-slider__text">
+                        <p lang="en" class="reviews__text">
                             Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
                              Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
                              неподвластны времени, 
                             а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
                         </p> 
-                        <span class="reviews__name">
+                        <h4 lang="en" class="reviews__name">
                             Алисия Пума - клиент Fashun
-                        </span>                                                                
+                        </h4>                                                                
                     
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <img src="img/quote-left.svg" alt="Кавычки" class="reviews__slide-img">
-                        <p class="reviews-slider__text">
+                        <p lang="en" class="reviews__text">
                             Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
                              Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
                              неподвластны времени, 
@@ -572,13 +572,13 @@
                              неподвластны времени, 
                             а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
                         </p> 
-                        <span class="reviews__name">
+                        <h4 lang="en" class="reviews__name">
                             Мерелин Шлюха - клиент Fashun
-                        </span>           
+                        </h4>           
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <img src="img/quote-left.svg" alt="Кавычки" class="reviews__slide-img">
-                        <p class="reviews-slider__text">
+                        <p lang="en" class="reviews__text">
                             Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские.
                              Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно 
                              неподвластны времени, 
@@ -595,9 +595,9 @@
                             неподвластны времени, 
                            а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
                         </p> 
-                        <span class="reviews__name">
+                        <h4 lang="en" class="reviews__name">
                             Кармэн Электра - клиент Fashun
-                        </span>           
+                        </h4>           
                     </div>
                     
                     
@@ -618,8 +618,8 @@
             <div class="line"></div>
             <div class="history__wrapper">
                    <div class="history-text">
-                <span class="history-label">Истории</span>
-                <h3 class="history-title"><span>Это</span> История Fashun</h3>
+                <span lang="en" class="history-label">Истории</span>
+                <h3 lang="en" class="history-title"><span>Это</span> История Fashun</h3>
                 <p class="history-description">
                     Ознакомьтесь с нашим рассказом о моде.
     Написано нашим дизайнером и специалистом.
@@ -637,15 +637,15 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper history__slider-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide history-slide"> 
-                
+            <div class="swiper-slide "> 
+                <div class="history-slide">
                     <div class="history-slide__item">
                         <div class="history__img-wrap">
                             <img src="img/history-img1.png" alt="" class="history-slide__img"> 
                         </div>
                     
                         <div class="history-slide__info">
-                            <h5 class="history-slide__title">
+                            <h5 lang="en" class="history-slide__title">
                                 Mix & Match Style 01: повседневный и формальный стиль
                             </h5>
                             <a href="#" class="history-slide__link">Читать далее</a>
@@ -657,7 +657,7 @@
                         </div>
                     
                         <div class="history-slide__info">
-                            <h5 class="history-slide__title">
+                            <h5 lang="en" class="history-slide__title">
                                 Лайфхак: Купите одежду Thrifft на воскресном рынке
 
                             </h5>
@@ -665,7 +665,7 @@
                         </div>
                  
                     </div>
-                
+                </div>
             </div> 
            
             
@@ -686,7 +686,7 @@
 
 <section class="subscribe">
     <div class="subscribe-container">
-        <h2 class="subscribe-title ">
+        <h2 lang="en" class="subscribe-title ">
             Подпишитесь
             <span class="subscribe-title__strong">Напишите свой адрес электронной почты.<span><br></span> 
                 Мы будем присылать вам новости из мира моды.</span>
@@ -700,19 +700,20 @@
         </form>
     </div>
 </section>
-<footer class="footer">
+<footer class="footer" id="contacts">
     <div class="footer-container">
         <div class="footer-wrapper">
             <div class="footer-social">
-                <img src="img/logo.svg" alt="" class="footer-logo">
+                <a href="index.html"><img src="img/logo.svg" alt="" class="footer-logo"></a>
+                
                 <span class="footer-social__text">
                     Интернет-магазин брендовой одежды с оплатой онлайн
                 </span>
                 <div class="footer-social__group">
-                    <a href="#" class="footer-social__link"><img src="img/google1.svg" alt="гугол"></a>
-                    <a href="#" class="footer-social__link"><img src="img/twit.svg" alt="твитер"></a>
-                    <a href="#" class="footer-social__link"><img src="img/inst.svg" alt="инста"></a>
-                    <a href="#" class="footer-social__link"><img src="img/in.svg" alt="ин?"></a> 
+                    <a target="_blank" rel="noopener noreferrer" href="https://google.com" class="footer-social__link"><img src="img/google1.svg" alt="гугол"></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com" class="footer-social__link"><img src="img/twit.svg" alt="твитер"></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://instagram.com" class="footer-social__link"><img src="img/inst.svg" alt="инста"></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://instagram.com" class="footer-social__link"><img src="img/in.svg" alt="ин?"></a> 
                 </div>
                 
 
@@ -759,71 +760,72 @@
         </div>
     </div>
 </footer>
-<div class="modal" id="modal">
-    <div class="modal__overlay">
-
-    </div>
-    <!-- /.modal__overlay -->
-    <div class="modal__dialog">
-        <a href="#" class="modal__close">
-            <img src="img/close.svg" alt="close">
-        </a>
-            <h3 class="modal__title modal__title--mb-input modal__title--modal">
-               Проконсультироваться
-            </h3>
-                <form action="send.php" method="POST" class="modal__form form">
-                    <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="3" >
-                    <input type="tel" class="input modal__input phoneInput" placeholder="Ваш номер*" name="phone" required minlength="18">
-                    <input type="email" class="input modal__input" placeholder="Ваш Email*" name="email" required>
-                    
-                    <div class="modal__form modal__form--button-flex"> 
-
-                        <button class="button modal__button">Отправить</button>
-                        <div class="modal__info">*Вы согласны с обработкой персональных данных</div>
-                    </div> 
-                    
-                </form>
-        
-    </div>
-    <!-- /.modal__dialog -->
-</div>
-<!-- /.modal -->
 <div class="modal" id="modal-in">
-    <div class="modal__overlay">
-
-    </div>
+    <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
-    <div class="modal__dialog">
-        <a href="#" class="modal__close">
-            <img src="img/close.svg" alt="close">
-        </a>
-            <h3 class="modal__title modal__title--mb-input modal__title--modal">
-               Войти
-            </h3>
-                <form action="send.php" method="POST" class="modal__form form">
-                    <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="3" >
-                    <input type="tel" class="input modal__input phoneInput" placeholder="Ваш номер*" name="phone" required minlength="18">
-                    <input type="email" class="input modal__input" placeholder="Ваш Email*" name="email" required>
-                    
-                    <div class="modal__form modal__form--button-flex"> 
+    
+        <div class="modal__dialog">
+                <a href="#" class="modal__close">
+                    <img src="img/close.svg" alt="close">
+                </a>
+                    <h3 class="modal__title modal__title--mb-input modal__title--modal">
+                    Войти
+                    </h3>
+                        <form action="send.php" method="POST" class="modal__form form">
+                            <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="3" >
+                            <input type="tel" class="input modal__input phoneInput" placeholder="Ваш номер*" name="phone" required minlength="18">
+                            <input type="email" class="input modal__input" placeholder="Ваш Email*" name="email" required>
+                            
+                            <div class="modal__form modal__form--button-flex"> 
 
-                        <button class="button modal__button">Войти</button>
-                        <div class="modal__info">*Забыли пароль?</div>
-                    </div> 
-                    
-                </form>
-        
-    </div>
-    <!-- /.modal__dialog -->
+                                <button class="button modal__button">Войти</button>
+                                <div class="modal__info">*Забыли пароль?</div>
+                            </div> 
+                            
+                        </form>
+                
+            </div>
+            <!-- /.modal__dialog -->
+    
 </div>
+ <div class="modal" id="modal">
+    <div class="modal__overlay"> </div>
+    <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+                <a href="#" class="modal__close">
+                    <img src="img/close.svg" alt="close">
+                </a>
+                    <h3 class="modal__title modal__title--mb-input modal__title--modal">
+                    Проконсультироваться
+                    </h3>
+                        <form action="send.php" method="POST" class="modal__form form">
+                            <input type="text" class="input modal__input" placeholder="Ваше имя*" name="name" required minlength="3" >
+                            <input type="tel" class="input modal__input phoneInput" placeholder="Ваш номер*" name="phone" required minlength="18">
+                            <input type="email" class="input modal__input" placeholder="Ваш Email*" name="email" required>
+                            
+                            <div class="modal__form modal__form--button-flex"> 
+
+                                <button class="button modal__button">Отправить</button>
+                                <div class="modal__info">*Вы согласны с обработкой персональных данных</div>
+                            </div> 
+                            
+                        </form>
+                
+            </div>
+   
+    
+    <!-- /.modal__dialog -->
+</div> 
+<!-- /.modal -->
+
     <script
   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="JS/jquery.validate.min.js"></script>
-  <script src="JS/jquery.mask.min.js"></script>
-  <script src="JS/main.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
 
 
     </body>
